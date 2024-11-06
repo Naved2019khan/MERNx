@@ -10,7 +10,9 @@ const userSchema = mongoose.Schema({
         type : String,
         required : "password is required" ,
     },
-    name : String 
+    name : String ,
+    resetPasswordToken : String,
+    resetPasswordExpires : Date
 },
  {
     versionKey : false,

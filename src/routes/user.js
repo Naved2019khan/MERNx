@@ -10,5 +10,6 @@ router.post("/forgot-password",USER.forgotPassword)
 router.post("/get-user-id",USER.getUserById)
 router.post("/get-login-user",authenticateToken,USER.getUser)
 router.post("/get-all-user",USER.getAllUser)
+router.post("/reset-password/:token",USER.resetPassword)
 
 module.exports = router
